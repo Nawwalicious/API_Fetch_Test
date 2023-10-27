@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.products-root{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+
+    .options{
+        border: 1px solid red;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        button{
+            padding: 2px 5px;
+            min-width: 200px;
+            margin: 0 4px;
+        }
+    }
+
+    .products-root{
+        border: 1px solid blue;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+    
+        .product-card{
+            width: 15%;
+            flex: 1 0 auto;
+            border: 1px solid palevioletred;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 10px;
+        }
+    }
+}
+

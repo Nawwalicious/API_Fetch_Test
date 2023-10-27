@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.weather-root{
+    height: auto;
+    background-image: linear-gradient(gray,gainsboro);
+
+    .weather-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+        height: auto;
+        margin: auto;
+        border: 1px solid pink;
+        background-color: aliceblue;
+        border-radius: 5px;
+        padding: 50px 20px;
+
+        .data-pill{
+            border: 1px solid black;
+            background-color: skyblue;
+            border-radius: 5px;
+            padding: 20px 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
