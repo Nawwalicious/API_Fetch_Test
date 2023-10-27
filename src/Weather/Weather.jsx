@@ -44,12 +44,19 @@ function Weather() {
     
 
     function handleClick(){
-        console.log(weatherData);
+        axios.get("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/hyderabad?unitGroup=us&key=ANWBET87272D2ZP6HK3DA9MCX&contentType=json")
+                .then((response) => {
+                    setWeatherData(response.data);
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
     }
 
     return ( 
         <div className="weather-root">
             <div className="weather-data">
+                <div className="data-pill"><button onClick={handleClick}>Fetch Data</button></div>
                 <div className="data-pill"><span>Latitude: {latitude}, Longitude:{longitude}</span></div>
                 <div className="data-pill"><span>Location: {resolvedAddress}</span></div>
                 <div className="data-pill"><span>Time: {currentConditionsDatetime}</span></div>
